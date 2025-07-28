@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgBarang"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/preview_image"/>
+
+    <Button
+        android:id="@+id/btnPilihGambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Gambar"/>
+
+    <Spinner
+        android:id="@+id/spnKondisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kondisi"/>
+
+    <EditText
+        android:id="@+id/etNamaBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Barang"/>
+
+    <EditText
+        android:id="@+id/etSeller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Seller"/>
+
+    <EditText
+        android:id="@+id/etTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/etPcs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PCS (Jumlah)"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Remarks"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kembali"/>
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Simpan"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

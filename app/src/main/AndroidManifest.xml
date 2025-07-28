@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.millenialzdev.reprosses">
+
+    <!-- Izin yang dibutuhkan -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" android:required="false" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" android:required="false" />
+
+    <!-- Menghindari crash jika perangkat tidak punya kamera -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Reprosses"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Provider untuk akses file dari kamera -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Service untuk FCM -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true"
+            tools:replace="android:exported">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Activity untuk edit user -->
+        <activity android:name=".EditUserActivity" android:exported="false" />
+
+        <!-- Activity untuk admin -->
+        <activity android:name=".AdminActivity" android:exported="false" />
+
+        <!-- Activity untuk daftar barang -->
+        <activity android:name=".DataBarangActivity" android:exported="false" />
+
+        <!-- Activity untuk input barang -->
+        <activity android:name=".InputBarangActivity" android:exported="false" />
+
+        <!-- Activity utama setelah login -->
+        <activity android:name=".MainActivity" android:exported="true" />
+
+        <!-- Activity untuk halaman pendaftaran pengguna -->
+        <activity android:name=".Register" android:exported="true" />
+
+        <!-- Activity untuk halaman login (launcher) -->
+        <activity android:name=".Login" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

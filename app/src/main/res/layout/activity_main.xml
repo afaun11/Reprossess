@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Profil User -->
+    <TextView
+        android:id="@+id/tvProfilUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👤 Nama User (ID) - Edit Profil"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:paddingBottom="12dp" />
+
+    <!-- Monitor Data (Header + Total) -->
+    <TextView
+        android:id="@+id/tvMonitorData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monitor Data"
+        android:textSize="14sp"
+        android:paddingBottom="16dp" />
+
+    <!-- Tombol Input Barang -->
+    <Button
+        android:id="@+id/btnInputBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Barang" />
+
+    <!-- Tombol Data Barang -->
+    <Button
+        android:id="@+id/btnDataBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Barang"
+        android:layout_marginTop="8dp" />
+
+    <!-- Tombol Keluar -->
+    <Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

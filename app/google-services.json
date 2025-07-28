@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "626812624433",
+    "project_id": "reprocces",
+    "storage_bucket": "reprocces.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626812624433:android:c698303191b7bc356cff10",
+        "android_client_info": {
+          "package_name": "com.millenialzdev.reprosses"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3HfuDhrMJyf8rNfHGB6LMsDVSKDW6vUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

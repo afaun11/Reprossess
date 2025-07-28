@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <!-- ID User (tidak bisa diubah) -->
+        <EditText
+            android:id="@+id/etUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID User"
+            android:enabled="false"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <!-- Nama -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Pengguna"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:background="@drawable/edittext_background" />
+
+        <Button
+            android:id="@+id/btnPerbaharuiData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perbaharui Data"
+            android:layout_marginTop="24dp" />
+
+        <!-- Password lama -->
+        <EditText
+            android:id="@+id/etPasswordLama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password Lama"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:visibility="gone" />
+
+        <!-- Password baru -->
+        <EditText
+            android:id="@+id/etPasswordBaru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password Baru"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:visibility="gone" />
+
+        <!-- Tombol simpan perubahan -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

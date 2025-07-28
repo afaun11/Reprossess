@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Reprosses</string>
+
+    <string-array name="division_list">
+        <item>Pilih Division</item>
+        <item>Reguler Worker</item>
+        <item>Team Leader</item>
+        <item>Captain</item>
+        <item>Supervisor</item>
+        <item>Manager</item>
+    </string-array>
+
+    <string-array name="kondisi_list">
+        <item>Kondisi Barang</item>
+        <item>Damage</item>
+        <item>Return</item>
+        <item>Tercecer</item>
+        <item>Basah</item>
+        <item>Blank Lop</item>
+        <item>Doubell Tn</item>
+    </string-array>
+</resources>
